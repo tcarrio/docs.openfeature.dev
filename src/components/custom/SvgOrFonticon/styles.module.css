@@ -1,0 +1,13 @@
+.svg {
+  color: var(--ifm-color-emphasis-800);
+  transition: all var(--ifm-transition-fast) ease;
+  transition-property: border, box-shadow;
+}
+
+.svgIcon {
+  fill: var(--ifm-color-emphasis-800);
+}
+
+a:hover .svgIcon {
+  fill: var(--ifm-color-emphasis-700);
+}

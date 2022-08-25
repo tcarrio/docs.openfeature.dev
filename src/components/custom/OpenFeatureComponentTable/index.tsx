@@ -9,7 +9,7 @@ export class OpenFeatureComponentTable extends React.Component<{
     return (
       <section className={clsx('row')}>
         {this.props.items
-          .sort((a, b) => a.title.localeCompare(b.title))
+          .sort((a, b) =>  a.showLast ? 1 : a.title.localeCompare(b.title))
           .map((item) => {
             return (
               <article className="col col--5 margin-bottom--lg">
